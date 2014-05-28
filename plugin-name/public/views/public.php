@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Represents the view for the public-facing component of the plugin.
  *
