@@ -1,28 +1,23 @@
 <?php
 /**
- * The WordPress Plugin Boilerplate.
- *
- * A foundation off of which to build well-documented WordPress plugins that
- * also follow WordPress Coding Standards and PHP best practices.
- *
  * @package   Plugin_Name
- * @author    Your Name <email@example.com>
+ * @author    Rachel Carden <contactwpdreamer@gmail.com>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2014 Your Name or Company Name
+ * @link      http://wpdreamer.com
+ * @copyright 2014 Rachel Carden
  *
  * @wordpress-plugin
  * Plugin Name:       @TODO
  * Plugin URI:        @TODO
  * Description:       @TODO
  * Version:           1.0
- * Author:            @TODO
- * Author URI:        @TODO
+ * Author:            Rachel Carden
+ * Author URI:        http://wpdreamer.com
  * Text Domain:       plugin-name-locale
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /languages
- * GitHub Plugin URI: https://github.com/<owner>/<repo>
+ * GitHub Plugin URI: @TODO https://github.com/bamadesigner/<repo>
  * WordPress-Plugin-Boilerplate: v2.6.1
  */
 

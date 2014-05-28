@@ -3,10 +3,10 @@
  * Fired when the plugin is uninstalled.
  *
  * @package   Plugin_Name
- * @author    Your Name <email@example.com>
+ * @author    Rachel Carden <contactwpdreamer@gmail.com>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2014 Your Name or Company Name
+ * @link      http://wpdreamer.com
+ * @copyright 2014 Rachel Carden
  */
 
 // If uninstall not called from WordPress, then exit
