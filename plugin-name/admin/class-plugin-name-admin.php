@@ -26,18 +26,18 @@ class Plugin_Name_Admin {
 	/**
 	 * Instance of this class.
 	 *
-	 * @since    1.0
+	 * @since 1.0
 	 *
-	 * @var      object
+	 * @var object
 	 */
 	protected static $instance = null;
 
 	/**
 	 * Slug of the plugin screen.
 	 *
-	 * @since    1.0
+	 * @since 1.0
 	 *
-	 * @var      string
+	 * @var string
 	 */
 	protected $plugin_screen_hook_suffix = null;
 
@@ -45,7 +45,7 @@ class Plugin_Name_Admin {
 	 * Initialize the plugin by loading admin scripts & styles and adding a
 	 * settings page and menu.
 	 *
-	 * @since     1.0
+	 * @since 1.0
 	 */
 	private function __construct() {
 
@@ -94,9 +94,9 @@ class Plugin_Name_Admin {
 	/**
 	 * Return an instance of this class.
 	 *
-	 * @since     1.0
+	 * @since 1.0
 	 *
-	 * @return    object    A single instance of this class.
+	 * @return object - A single instance of this class.
 	 */
 	public static function get_instance() {
 
@@ -124,9 +124,9 @@ class Plugin_Name_Admin {
 	 *
 	 * - Rename "Plugin_Name" to the name your plugin
 	 *
-	 * @since     1.0
+	 * @since 1.0
 	 *
-	 * @return    null    Return early if no settings page is registered.
+	 * @return null - Return early if no settings page is registered.
 	 */
 	public function enqueue_admin_styles() {
 
@@ -148,9 +148,9 @@ class Plugin_Name_Admin {
 	 *
 	 * - Rename "Plugin_Name" to the name your plugin
 	 *
-	 * @since     1.0
+	 * @since 1.0
 	 *
-	 * @return    null    Return early if no settings page is registered.
+	 * @return null - Return early if no settings page is registered.
 	 */
 	public function enqueue_admin_scripts() {
 
@@ -168,7 +168,7 @@ class Plugin_Name_Admin {
 	/**
 	 * Register the administration menu for this plugin into the WordPress Dashboard menu.
 	 *
-	 * @since    1.0
+	 * @since 1.0
 	 */
 	public function add_plugin_admin_menu() {
 
@@ -199,7 +199,7 @@ class Plugin_Name_Admin {
 	/**
 	 * Render the settings page for this plugin.
 	 *
-	 * @since    1.0
+	 * @since 1.0
 	 */
 	public function display_plugin_admin_page() {
 		include_once( 'views/admin.php' );
@@ -208,7 +208,7 @@ class Plugin_Name_Admin {
 	/**
 	 * Add settings action link to the plugins page.
 	 *
-	 * @since    1.0
+	 * @since 1.0
 	 */
 	public function add_action_links( $links ) {
 
@@ -228,7 +228,7 @@ class Plugin_Name_Admin {
 	 *           Actions:    http://codex.wordpress.org/Plugin_API#Actions
 	 *           Reference:  http://codex.wordpress.org/Plugin_API/Action_Reference
 	 *
-	 * @since    1.0
+	 * @since 1.0
 	 */
 	public function action_method_name() {
 		// @TODO: Define your action hook callback here
@@ -241,7 +241,7 @@ class Plugin_Name_Admin {
 	 *           Filters: http://codex.wordpress.org/Plugin_API#Filters
 	 *           Reference:  http://codex.wordpress.org/Plugin_API/Filter_Reference
 	 *
-	 * @since    1.0
+	 * @since 1.0
 	 */
 	public function filter_method_name() {
 		// @TODO: Define your filter hook callback here
