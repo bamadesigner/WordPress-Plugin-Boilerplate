@@ -89,7 +89,7 @@ class Plugin_Name {
 	 *
 	 * @since 1.0
 	 *
-	 * @return    Plugin slug variable.
+	 * @return plugin slug variable.
 	 */
 	public function get_plugin_slug() {
 		return $this->plugin_slug;
