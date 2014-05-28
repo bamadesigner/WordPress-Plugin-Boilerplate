@@ -26,11 +26,11 @@ class Plugin_Name {
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
 	 *
-	 * @since   1.0.0
+	 * @since   1.0
 	 *
 	 * @var     string
 	 */
-	const VERSION = '1.0.0';
+	const VERSION = '1.0';
 
 	/**
 	 * @TODO - Rename "plugin-name" to the name of your plugin
@@ -42,7 +42,7 @@ class Plugin_Name {
 	 * of text. Its value should match the Text Domain file header in the main
 	 * plugin file.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 *
 	 * @var      string
 	 */
@@ -51,7 +51,7 @@ class Plugin_Name {
 	/**
 	 * Instance of this class.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 *
 	 * @var      object
 	 */
@@ -61,7 +61,7 @@ class Plugin_Name {
 	 * Initialize the plugin by setting localization and loading public scripts
 	 * and styles.
 	 *
-	 * @since     1.0.0
+	 * @since     1.0
 	 */
 	private function __construct() {
 
@@ -86,7 +86,7 @@ class Plugin_Name {
 	/**
 	 * Return the plugin slug.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 *
 	 * @return    Plugin slug variable.
 	 */
@@ -97,7 +97,7 @@ class Plugin_Name {
 	/**
 	 * Return an instance of this class.
 	 *
-	 * @since     1.0.0
+	 * @since     1.0
 	 *
 	 * @return    object    A single instance of this class.
 	 */
@@ -114,7 +114,7 @@ class Plugin_Name {
 	/**
 	 * Fired when the plugin is activated.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 *
 	 * @param    boolean    $network_wide    True if WPMU superadmin uses
 	 *                                       "Network Activate" action, false if
@@ -151,7 +151,7 @@ class Plugin_Name {
 	/**
 	 * Fired when the plugin is deactivated.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 *
 	 * @param    boolean    $network_wide    True if WPMU superadmin uses
 	 *                                       "Network Deactivate" action, false if
@@ -189,7 +189,7 @@ class Plugin_Name {
 	/**
 	 * Fired when a new site is activated with a WPMU environment.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 *
 	 * @param    int    $blog_id    ID of the new blog.
 	 */
@@ -211,7 +211,7 @@ class Plugin_Name {
 	 * - not spam
 	 * - not deleted
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 *
 	 * @return   array|false    The blog ids, false if no matches.
 	 */
@@ -231,7 +231,7 @@ class Plugin_Name {
 	/**
 	 * Fired for each blog when the plugin is activated.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 */
 	private static function single_activate() {
 		// @TODO: Define activation functionality here
@@ -240,7 +240,7 @@ class Plugin_Name {
 	/**
 	 * Fired for each blog when the plugin is deactivated.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 */
 	private static function single_deactivate() {
 		// @TODO: Define deactivation functionality here
@@ -249,7 +249,7 @@ class Plugin_Name {
 	/**
 	 * Load the plugin text domain for translation.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 */
 	public function load_plugin_textdomain() {
 
@@ -264,7 +264,7 @@ class Plugin_Name {
 	/**
 	 * Register and enqueue public-facing style sheet.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 */
 	public function enqueue_styles() {
 		wp_enqueue_style( $this->plugin_slug . '-plugin-styles', plugins_url( 'assets/css/public.css', __FILE__ ), array(), self::VERSION );
@@ -273,7 +273,7 @@ class Plugin_Name {
 	/**
 	 * Register and enqueues public-facing JavaScript files.
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 */
 	public function enqueue_scripts() {
 		wp_enqueue_script( $this->plugin_slug . '-plugin-script', plugins_url( 'assets/js/public.js', __FILE__ ), array( 'jquery' ), self::VERSION );
@@ -286,7 +286,7 @@ class Plugin_Name {
 	 *        Actions:    http://codex.wordpress.org/Plugin_API#Actions
 	 *        Reference:  http://codex.wordpress.org/Plugin_API/Action_Reference
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 */
 	public function action_method_name() {
 		// @TODO: Define your action hook callback here
@@ -299,7 +299,7 @@ class Plugin_Name {
 	 *        Filters: http://codex.wordpress.org/Plugin_API#Filters
 	 *        Reference:  http://codex.wordpress.org/Plugin_API/Filter_Reference
 	 *
-	 * @since    1.0.0
+	 * @since    1.0
 	 */
 	public function filter_method_name() {
 		// @TODO: Define your filter hook callback here
