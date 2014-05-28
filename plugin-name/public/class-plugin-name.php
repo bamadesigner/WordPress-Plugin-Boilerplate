@@ -28,7 +28,6 @@ class Plugin_Name {
 	 * Plugin version, used for cache-busting of style and script file references.
 	 *
 	 * @since 1.0
-	 *
 	 * @var string
 	 */
 	const VERSION = '1.0';
@@ -44,7 +43,6 @@ class Plugin_Name {
 	 * plugin file.
 	 *
 	 * @since 1.0
-	 *
 	 * @var string
 	 */
 	protected $plugin_slug = 'plugin-name';
@@ -53,7 +51,6 @@ class Plugin_Name {
 	 * Instance of this class.
 	 *
 	 * @since 1.0
-	 *
 	 * @var object
 	 */
 	protected static $instance = null;
@@ -88,7 +85,6 @@ class Plugin_Name {
 	 * Return the plugin slug.
 	 *
 	 * @since 1.0
-	 *
 	 * @return plugin slug variable.
 	 */
 	public function get_plugin_slug() {
@@ -99,7 +95,6 @@ class Plugin_Name {
 	 * Return an instance of this class.
 	 *
 	 * @since 1.0
-	 *
 	 * @return object - A single instance of this class.
 	 */
 	public static function get_instance() {
@@ -116,7 +111,6 @@ class Plugin_Name {
 	 * Fired when the plugin is activated.
 	 *
 	 * @since 1.0
-	 *
 	 * @param boolean - $network_wide - True if WPMU superadmin uses
 	 *		"Network Activate" action, false if
 	 *		WPMU is disabled or plugin is
@@ -153,7 +147,6 @@ class Plugin_Name {
 	 * Fired when the plugin is deactivated.
 	 *
 	 * @since 1.0
-	 *
 	 * @param boolean - $network_wide - True if WPMU superadmin uses
 	 *		"Network Activate" action, false if
 	 *		WPMU is disabled or plugin is
@@ -191,7 +184,6 @@ class Plugin_Name {
 	 * Fired when a new site is activated with a WPMU environment.
 	 *
 	 * @since 1.0
-	 *
 	 * @param int - $blog_id - ID of the new blog.
 	 */
 	public function activate_new_site( $blog_id ) {
@@ -213,7 +205,6 @@ class Plugin_Name {
 	 * - not deleted
 	 *
 	 * @since 1.0
-	 *
 	 * @return array|false - The blog ids, false if no matches.
 	 */
 	private static function get_blog_ids() {

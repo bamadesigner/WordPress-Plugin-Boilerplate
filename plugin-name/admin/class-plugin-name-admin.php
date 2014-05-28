@@ -22,7 +22,6 @@ class Plugin_Name_Admin {
 	 * Instance of this class.
 	 *
 	 * @since 1.0
-	 *
 	 * @var object
 	 */
 	protected static $instance = null;
@@ -31,7 +30,6 @@ class Plugin_Name_Admin {
 	 * Slug of the plugin screen.
 	 *
 	 * @since 1.0
-	 *
 	 * @var string
 	 */
 	protected $plugin_screen_hook_suffix = null;
@@ -90,7 +88,6 @@ class Plugin_Name_Admin {
 	 * Return an instance of this class.
 	 *
 	 * @since 1.0
-	 *
 	 * @return object - A single instance of this class.
 	 */
 	public static function get_instance() {
@@ -120,7 +117,6 @@ class Plugin_Name_Admin {
 	 * - Rename "Plugin_Name" to the name your plugin
 	 *
 	 * @since 1.0
-	 *
 	 * @return null - Return early if no settings page is registered.
 	 */
 	public function enqueue_admin_styles() {
@@ -144,7 +140,6 @@ class Plugin_Name_Admin {
 	 * - Rename "Plugin_Name" to the name your plugin
 	 *
 	 * @since 1.0
-	 *
 	 * @return null - Return early if no settings page is registered.
 	 */
 	public function enqueue_admin_scripts() {
