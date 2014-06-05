@@ -182,6 +182,8 @@ class Plugin_Name {
 
 	/**
 	 * Fired when a new site is activated with a WPMU environment.
+	 * 
+	 * This function is invoked by the 'wpmu_new_blog' action.
 	 *
 	 * @since 1.0
 	 * @param int - $blog_id - ID of the new blog.
@@ -236,6 +238,8 @@ class Plugin_Name {
 	/**
 	 * Load the plugin text domain for translation.
 	 *
+	 * This function is invoked by the 'init' action.
+	 *
 	 * @since 1.0
 	 */
 	public function load_plugin_textdomain() {
@@ -250,6 +254,8 @@ class Plugin_Name {
 
 	/**
 	 * Register and enqueue public-facing style sheet.
+	 * 
+	 * This function is invoked by the 'wp_enqueue_scripts' action.
 	 *
 	 * @since 1.0
 	 */
@@ -259,6 +265,8 @@ class Plugin_Name {
 
 	/**
 	 * Register and enqueues public-facing JavaScript files.
+	 * 
+	 * This function is invoked by the 'wp_enqueue_scripts' action.
 	 *
 	 * @since 1.0
 	 */
