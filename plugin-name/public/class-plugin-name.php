@@ -93,6 +93,8 @@ class Plugin_Name {
 
 	/**
 	 * Return an instance of this class.
+	 * 
+	 * This function is invoked by the 'plugins_loaded' action.
 	 *
 	 * @since 1.0
 	 * @return object - A single instance of this class.
