@@ -111,6 +111,8 @@ class Plugin_Name_Admin {
 
 	/**
 	 * Register and enqueue admin-specific style sheet.
+	 * 
+	 * This function is invoked by the 'admin_enqueue_scripts' action.
 	 *
 	 * @TODO:
 	 *
@@ -134,6 +136,8 @@ class Plugin_Name_Admin {
 
 	/**
 	 * Register and enqueue admin-specific JavaScript.
+	 * 
+	 * This function is invoked by the 'admin_enqueue_scripts' action.
 	 *
 	 * @TODO:
 	 *
@@ -157,6 +161,8 @@ class Plugin_Name_Admin {
 
 	/**
 	 * Register the administration menu for this plugin into the WordPress Dashboard menu.
+	 * 
+	 * This function is invoked by the 'admin_menu' action.
 	 *
 	 * @since 1.0
 	 */
@@ -197,6 +203,8 @@ class Plugin_Name_Admin {
 
 	/**
 	 * Add settings action link to the plugins page.
+	 * 
+	 * This function is invoked by the {'plugin_action_links_' . $plugin_basename} filter.
 	 *
 	 * @since 1.0
 	 */
