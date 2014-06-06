@@ -45,7 +45,7 @@ class Plugin_Name {
 	 * @since 1.0
 	 * @var string
 	 */
-	protected $plugin_slug = 'plugin-name';
+	public $plugin_slug = 'plugin-name';
 
 	/**
 	 * Instance of this class.
@@ -79,16 +79,6 @@ class Plugin_Name {
 		add_action( '@TODO', array( $this, 'action_method_name' ) );
 		add_filter( '@TODO', array( $this, 'filter_method_name' ) );
 
-	}
-
-	/**
-	 * Return the plugin slug.
-	 *
-	 * @since 1.0
-	 * @return plugin slug variable.
-	 */
-	public function get_plugin_slug() {
-		return $this->plugin_slug;
 	}
 
 	/**
