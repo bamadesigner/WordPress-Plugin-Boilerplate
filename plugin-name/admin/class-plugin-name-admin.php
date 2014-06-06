@@ -52,7 +52,7 @@ class Plugin_Name_Admin {
 		} */
 
 		/*
-		 * Call $plugin_slug from public plugin class.
+		 * // Store instance of public class
 		 *
 		 * @TODO:
 		 *
@@ -60,7 +60,6 @@ class Plugin_Name_Admin {
 		 *
 		 */
 		$plugin = Plugin_Name::get_instance();
-		$this->plugin_slug = $plugin->get_plugin_slug();
 
 		// Load admin style sheet and JavaScript.
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_styles' ) );
